@@ -26,3 +26,15 @@ jobs:
 
       - name: Test 🚨
         run: npm test
+        env:
+          DepositMumbai: ${{ secrets.DepositMumbai }}
+          DBS_URL: ${{ secrets.DBS_URL }}
+          LOCATION_URL: ${{ secrets.LOCATION_URL }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          USER_SQL: ${{ secrets.USER_SQL }}
+          DATABASE_SQL: ${{ secrets.DATABASE_SQL }}
+          DATANAME_SQL: ${{ secrets.DATANAME_SQL }}
+          LIGHTHOUSE_API_TOKEN: ${{ secrets.LIGHTHOUSE_API_TOKEN }}
+          HOST_SQL: ${{ secrets.HOST_SQL }}
+          PASSWORD_SQL: ${{ secrets.PASSWORD_SQL }}
+          MUMBAI_RPC: ${{ secrets.MUMBAI_RPC }}
